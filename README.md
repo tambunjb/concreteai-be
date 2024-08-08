@@ -19,4 +19,4 @@ PAYMENT MANAGER: http://localhost:3001
 - GET /transaction/:id
 
 POSTMAN LINK
-https://red-trinity-662156.postman.co/workspace/Public~a46612a0-17b5-4856-9e1d-f841bd0e023e/collection/1669089-52128928-b9d8-496c-9582-21365d817bbe?action=share&creator=1669089
+https://www.postman.com/red-trinity-662156/workspace/public/collection/1669089-52128928-b9d8-496c-9582-21365d817bbe?action=share&creator=1669089
