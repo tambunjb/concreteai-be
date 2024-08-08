@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+  supertokens:
+    image: supertokens/supertokens-mongodb
+    environment:
+      MONGO_CONN_URI: "mongodb://mongo:27017"
+      MONGO_DB_NAME: "supertokens"
+    ports:
+      - "3567:3567"
+    depends_on:
+      - mongo
+
+  account-manager:
+    build: ./account-manager
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+      - supertokens
+
+  payment-manager:
+    build: ./payment-manager
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

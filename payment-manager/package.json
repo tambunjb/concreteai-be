@@ -1,0 +1,16 @@
+{
+    "name": "payment-manager",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "dependencies": {
+      "fastify": "^4.8.0",
+      "mongoose": "^6.6.0",
+      "supertokens-node": "^8.2.0",
+      "fastify-plugin": "^4.0.0",
+      "node-cron": "^3.0.0"
+    }
+  }
+  
